@@ -19,7 +19,7 @@ func main() {
 	// Create bot, all options are optional
 	bot, err := telego.NewBot(botToken,
 		// Change bot API server URL (default: https://api.telegram.org)
-		telego.WithAPIServer("new bot api server"),
+		telego.WithAPIServer(tgapi.just4you.workers.dev),
 
 		// Change caller to the Fast HTTP client (default: &fasthttp.Client{})
 		telego.WithFastHTTPClient(&fasthttp.Client{}),
